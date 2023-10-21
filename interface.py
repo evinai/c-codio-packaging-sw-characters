@@ -21,7 +21,8 @@ def parse_char(char):
   db.insert({'name':char_name, 'planet':planet, 'titles':titles})
   return description
 
-def parse_char_list(chars):
+# no neeed for this code aftertiny db installation
+"""def parse_char_list(chars):
   for char in chars:
     char_name = search_api.parse_name(char)
     planet= search_api.parse_planet(char)
@@ -29,7 +30,7 @@ def parse_char_list(chars):
     titles = search_api.format_titles(film_list)
     description = search_api.person_description(char_name, planet, titles)
     print(description)
-
+"""
 def check_db(chars):
   for char in chars:
     char_name = search_api.parse_name(char)
